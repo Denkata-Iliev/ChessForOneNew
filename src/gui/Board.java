@@ -34,6 +34,7 @@ public class Board {
 
         BoardPanel() {
             super(new GridLayout(8,8));
+            setVisible(true);
             addTileAndAssignTileColor();
             setPreferredSize(BOARD_PANEL_DIMENSION);
         }
