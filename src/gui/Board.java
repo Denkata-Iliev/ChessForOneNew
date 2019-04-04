@@ -4,10 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Board {
-    private static final Dimension FRAME_DIMENSION = new Dimension(600,600);
+    private static final Dimension FRAME_DIMENSION = new Dimension(800, 800);
     private static final Dimension BOARD_PANEL_DIMENSION = new Dimension(400, 350);
-    private static final Color LIGHT_TILE_COLOR = Color.decode("#FFFACD");
-    private static final Color DARK_TILE_COLOR = Color.decode("#593E1A");
 
     private JFrame gameFrame = new JFrame("Chess");
     private MenuBar menuBar = new MenuBar();
@@ -33,28 +31,20 @@ public class Board {
     private class BoardPanel extends JPanel {
 
         BoardPanel() {
-            super(new GridLayout(8,8));
+            super(new GridLayout(8, 8));
             setVisible(true);
             addTileAndAssignTileColor();
             setPreferredSize(BOARD_PANEL_DIMENSION);
         }
 
-        void addTileAndAssignTileColor() {
+        private void addTileAndAssignTileColor() {
             TilePanel tilePanel;
-            for (int row = 1; row <= BoardUtils.ROWS_NUMBER; row++) {
-                for (int tileId = 1; tileId <= BoardUtils.ROW_LENGTH; tileId++) {
+            for (int row = 0; row < BoardUtils.ROWS_NUMBER; row++) {
+                for (int tileId = 0; tileId < BoardUtils.ROW_LENGTH; tileId++) {
                     tilePanel = new TilePanel();
-                    paintTile(row, tilePanel, tileId);
+                    tilePanel.paintTile(row, tileId);
                     add(tilePanel);
                 }
-            }
-        }
-
-        private void paintTile(int row, TilePanel tilePanel, int tileId) {
-            if (row % 2 != 0) {
-                tilePanel.setBackground(tileId % 2 != 0 ? LIGHT_TILE_COLOR : DARK_TILE_COLOR);
-            } else {
-                tilePanel.setBackground(tileId % 2 != 0 ? DARK_TILE_COLOR : LIGHT_TILE_COLOR);
             }
         }
     }
