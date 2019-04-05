@@ -43,6 +43,7 @@ public class Board {
                 for (int tileId = 0; tileId < BoardUtils.ROW_LENGTH; tileId++) {
                     tilePanel = new TilePanel();
                     tilePanel.paintTile(row, tileId);
+                    tilePanel.assignPieceIcon();
                     add(tilePanel);
                 }
             }
