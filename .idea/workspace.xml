@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+ HEAD
     <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+
+    <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,13 +15,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+ HEAD
+  <component name="FileEditorManager"> </component>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300"> </leaf>
+    <file pinned="false" current-in-tab="true"> </file>
+    <entry file="file://$PROJECT_DIR$/src/Application.java"> </entry>
+    <provider selected="true" editor-type-id="text-editor"> </provider>
+    <state relative-caret-position="119"> </state>
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="85">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
               <folding>
                 <element signature="e#89#90#0" expanded="true" />
                 <element signature="e#135#136#0" expanded="true" />
@@ -26,11 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+ HEAD
+        <file pinned="false" current-in-tab="false"> </file>
+        <entry file="file://$PROJECT_DIR$/src/gui/Board.java"> </entry>
+        <provider selected="true" editor-type-id="text-editor"> </provider>
+        <state relative-caret-position="583"> </state>
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="549">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
             </state>
           </provider>
         </entry>
@@ -38,9 +63,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+ HEAD
+              <state relative-caret-position="153"> </state>
               <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding> </folding>
+
+            <state relative-caret-position="272">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
+                <element signature="method#assignBlackPiecesIcons#0;class#TilePanel#0" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
                 <element signature="method#assignWhitePiecesIcons#0;class#TilePanel#0" />
               </folding>
             </state>
@@ -50,17 +82,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+ HEAD
+              <state relative-caret-position="357"> </state>
               <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+
+            <state relative-caret-position="340">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+ HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/gui/Piece.java" />
+        <option value="$PROJECT_DIR$/src/gui/WhitePiece.java" />
+        <option value="$PROJECT_DIR$/src/gui/BlackBishop.java" />
+        <option value="$PROJECT_DIR$/src/Application.java" />
+        <option value="$PROJECT_DIR$/src/gui/BoardUtils.java" />
+        <option value="$PROJECT_DIR$/src/gui/Board.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
+        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -68,7 +138,10 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+ HEAD
       <pane id="Scope" />
+
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,6 +164,10 @@
           <select />
         </subPane>
       </pane>
+ HEAD
+
+      <pane id="Scope" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,7 +204,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d4e10ac5-d644-481f-bf6c-704ae1d4caff" name="Default Changelist" comment="" />
+      <changelist id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="" />
       <created>1554219564558</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -137,9 +214,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+ HEAD
     <editor active="true" />
-    <layout>
+      <layout> </layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23027718" />
+
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22761194" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -148,7 +230,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+ HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -168,38 +254,86 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
+ HEAD
+      <entry file="file://$PROJECT_DIR$/src/gui/Board.java"> </entry>
+      <provider selected="true" editor-type-id="text-editor"> </provider>
+      <state relative-caret-position="583"> </state>
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
+      <folding> </folding>
             <element signature="e#505#506#0" expanded="true" />
             <element signature="e#532#533#0" expanded="true" />
+
+    <entry file="file://$PROJECT_DIR$/src/gui/WhitePiece.java" />
+    <entry file="file://$PROJECT_DIR$/pieces/BP.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="1145" column="16" selection-start-line="1145" selection-start-column="16" selection-end-line="1145" selection-end-column="16" />
+          <folding>
+            <element signature="e#40240#40241#0" expanded="true" />
+            <element signature="e#40267#40268#0" expanded="true" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+ HEAD
+      <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java"> </entry>
+      <provider selected="true" editor-type-id="text-editor"> </provider>
+      <state relative-caret-position="136"> </state>
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+
+    <entry file="file://$PROJECT_DIR$/src/gui/BlackBishop.java" />
+    <entry file="file://$PROJECT_DIR$/pieces/3.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pieces/4.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/BoardUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+ HEAD
+          <state relative-caret-position="357"> </state>
           <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-          <folding>
+          <folding> </folding>
             <element signature="imports" expanded="true" />
+
+        <state relative-caret-position="340">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="method#assignBlackPiecesIcons#0;class#TilePanel#0" />
+            <element signature="method#assignWhitePiecesIcons#0;class#TilePanel#0" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+ HEAD
+          <state relative-caret-position="119"> </state>
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+
+        <state relative-caret-position="85">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
           <folding>
             <element signature="e#89#90#0" expanded="true" />
             <element signature="e#135#136#0" expanded="true" />
@@ -207,5 +341,15 @@
         </state>
       </provider>
     </entry>
+ HEAD
+
+    <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+ 4281125645cd0a79540f6d2c83864890f0a29a8e
   </component>
 </project>

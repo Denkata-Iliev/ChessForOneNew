@@ -1,14 +1,12 @@
 package gui;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MenuBar extends JMenuBar {
 
     public MenuBar() {
-        setVisible(true);
         populateMenuBar(this);
+        setVisible(true);
     }
 
     private void populateMenuBar(JMenuBar menuBar) {
@@ -20,16 +18,20 @@ public class MenuBar extends JMenuBar {
     private JMenu gameMenu() {
         JMenu gameMenu = new JMenu("Game");
         gameMenu.add(startNewGame());
+        gameMenu.add(exitGame());
         return gameMenu;
+    }
+
+    private JMenuItem exitGame() {
+        JMenuItem exitGameItem = new JMenuItem("Exit");
+        exitGameItem.addActionListener(e -> System.exit(0));
+        return exitGameItem;
     }
 
     private JMenuItem startNewGame() {
         JMenuItem startNewGame = new JMenuItem("Start New Game");
-        startNewGame.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //TODO
-            }
+        startNewGame.addActionListener(e -> {
+            //TODO
         });
         return startNewGame;
     }
