@@ -50,4 +50,8 @@ public class Board {
             }
         }
     }
+
+    // printboard s piecetype i switch
+    // print dead
+    // mishka bez potvurzhdavane
 }
