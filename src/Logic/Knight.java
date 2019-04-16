@@ -11,10 +11,6 @@ public class Knight extends Piece {
         super(alliance, piecePosition);
     }
 
-    @Override
-    public List<Move> calculateLegalMoves(Board board) {
-        return null;
-    }
 
     @Override
     public List<Move> calculateLegalMoves(final Board board) {
@@ -25,13 +21,13 @@ public class Knight extends Piece {
 
             if (true /*nz oshte ama imashe neshto*/)) {
 
-                //final Piece pieceAtDestination = board.getPiece(candidateDestinationCoordinate);
+            /*    final Piece pieceAtDestination = board.getPiece(candidateDestinationCoordinate);
 
-                //if (pieceAtDestination == null) {
+                if (pieceAtDestination == null) {
 
-                    //legalMoves.add(new Move(board, this, candidateDestinationCoordinate));
+                    legalMoves.add(new Move(board, this, candidateDestinationCoordinate));
 
-                }/* else {
+                } else {
                     final Alliance pieceAtDestinationAllegiance = pieceAtDestination.getPieceAllegiance();
                     if (this.pieceAlliance != pieceAtDestinationAllegiance) {
                         legalMoves.add(new MajorAttackMove(board, this, candidateDestinationCoordinate,
@@ -41,6 +37,6 @@ public class Knight extends Piece {
                 */
             }
         }
-        //return ImmutableList.copyOf(legalMoves);    Dobavi imutable
+        return legalMoves;
     }
 }
