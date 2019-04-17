@@ -34,47 +34,37 @@ public class TilePanel extends JPanel {
     }
 
     private void assignPieceIcon() {
-        assignWhitePiecesIcons(coordinateX, coordinateY);
-        assignBlackPiecesIcons(coordinateX, coordinateY);
+        String[][] nameMatrix = new String[8][8];
+        for (int x = 0; x < Board.ROWS_NUMBER; x++) {
+            for (int y = 0; y < Board.ROW_LENGTH; y++) {
+                switch (nameMatrix[x][y]) {
+                    case "White_Queen":
+                    case "Black_Rook":
+                    case "Black_Queen":
+                    case "Black_King":
+                    case "White_Bishop":
+                    case "White_Knight":
+                    case "White_Rook":
+                    case "White_Pawn":
+                    case "White_King":
+                    case "Black_Pawn":
+                    case "Black_Bishop":
+                    case "Black_Knight":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
+                    default:
+                        System.out.println("Shouldn't come here!");
+                }
+            }
+        }
     }
 
-    private void assignBlackPiecesIcons(int row, int tileId) {
-        if (row == 1) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/R" + row + "T" + tileId + ".gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (row == 2) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/BP.gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    private void assignWhitePiecesIcons(int row, int tileId) {
-        if (row == 7) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/WP.gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (row == 8) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/R" + row + "T" + tileId + ".gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    private void putPieceIcon(String nameOfPiece) {
+        try {
+            BufferedImage pieceIcon = ImageIO.read(new File("pieces/" + nameOfPiece + ".gif"));
+            add(new JLabel(new ImageIcon(pieceIcon)));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
