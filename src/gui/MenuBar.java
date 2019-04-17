@@ -51,7 +51,7 @@ public class MenuBar extends JMenuBar {
 
     private JMenuItem aboutMenuItem() {
         JMenuItem aboutMenuItem = new JMenuItem("About");
-        String aboutMessage = "Създадено от Денислав и Божидар!";
+        String aboutMessage = "Създадено от:\nБожидар\nДенислав";
         aboutMenuItem.addActionListener(e -> JOptionPane.showMessageDialog(null, aboutMessage, "About", JOptionPane.PLAIN_MESSAGE));
         return aboutMenuItem;
     }
