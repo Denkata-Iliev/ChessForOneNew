@@ -20,7 +20,7 @@ public class TilePanel extends JPanel {
     public TilePanel(int x, int y) {
         this.coordinateX = x;
         this.coordinateY = y;
-        assignPieceIcon();
+        assignPieceIcon(x ,y);
         paintTile(x, y);
         setPreferredSize(TILE_PANEL_DIMENSION);
         addMouseListener(new MouseListener() {
@@ -61,50 +61,46 @@ public class TilePanel extends JPanel {
         }
     }
 
-    private void assignPieceIcon() {
+    private void assignPieceIcon(int row, int tileId) {
         String[][] nameMatrix = new String[8][8];
-        for (int x = 0; x < Board.ROWS_NUMBER; x++) {
-            for (int y = 0; y < Board.ROW_LENGTH; y++) {
-                switch (nameMatrix[x][y]) {
-                    case "White_Queen":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "Black_Rook":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "Black_Queen":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "Black_King":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "White_Bishop":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "White_Knight":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "White_Rook":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "White_Pawn":
-                        putPieceIcon(nameMatrix[x][y]);
-                    case "White_King":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "Black_Pawn":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "Black_Bishop":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    case "Black_Knight":
-                        putPieceIcon(nameMatrix[x][y]);
-                        break;
-                    default:
-                        System.out.println("Shouldn't come here!");
-                }
-            }
+        switch (nameMatrix[row][tileId]) {
+            case "White_Queen":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "Black_Rook":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "Black_Queen":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "Black_King":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "White_Bishop":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "White_Knight":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "White_Rook":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "White_Pawn":
+                putPieceIcon(nameMatrix[row][tileId]);
+            case "White_King":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "Black_Pawn":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "Black_Bishop":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            case "Black_Knight":
+                putPieceIcon(nameMatrix[row][tileId]);
+                break;
+            default:
+                System.out.println("Shouldn't come here!");
         }
     }
 
