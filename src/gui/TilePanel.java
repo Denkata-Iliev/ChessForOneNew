@@ -3,6 +3,8 @@ package gui;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -21,6 +23,32 @@ public class TilePanel extends JPanel {
         assignPieceIcon();
         paintTile(x, y);
         setPreferredSize(TILE_PANEL_DIMENSION);
+        addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
         setVisible(true);
         validate();
     }
@@ -39,16 +67,37 @@ public class TilePanel extends JPanel {
             for (int y = 0; y < Board.ROW_LENGTH; y++) {
                 switch (nameMatrix[x][y]) {
                     case "White_Queen":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "Black_Rook":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "Black_Queen":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "Black_King":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "White_Bishop":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "White_Knight":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "White_Rook":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "White_Pawn":
+                        putPieceIcon(nameMatrix[x][y]);
                     case "White_King":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "Black_Pawn":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "Black_Bishop":
+                        putPieceIcon(nameMatrix[x][y]);
+                        break;
                     case "Black_Knight":
                         putPieceIcon(nameMatrix[x][y]);
                         break;
