@@ -4,13 +4,13 @@ import java.util.List;
 
 public abstract class Piece {
 
-    final Alliance pieceAlliance;
+    boolean isWhite;
     final int piecePosition;
 
-    Piece(final Alliance alliance,
+    Piece(boolean isWhite,
           final int piecePosition) {
         this.piecePosition = piecePosition;
-        this.pieceAlliance = alliance;
+        this.isWhite = isWhite;
     }
 
     public abstract List<Move> calculateLegalMoves(final Board board);

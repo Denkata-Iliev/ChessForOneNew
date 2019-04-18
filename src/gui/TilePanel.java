@@ -80,5 +80,7 @@ public class TilePanel extends JPanel {
             }
         }
 
+
+        //vhod 8x8 matrica null/ string
     }
 }
