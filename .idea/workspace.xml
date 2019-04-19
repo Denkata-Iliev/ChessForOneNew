@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/BP.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T7.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T8.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/WP.gif" beforeDir="false" />
-    </list>
+    <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,33 +27,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-              <folding>
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="476">
+              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java">
+        <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="39">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding>
+                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,17 +88,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ChessForOneNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChessForOneNew" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChessForOneNew" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChessForOneNew" type="462c0819:PsiDirectoryNode" />
-              <item name="pieces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ChessForOneNew" type="b2602c69:ProjectViewProjectNode" />
@@ -144,8 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,7 +157,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23560767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -233,9 +200,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/gui/WhitePiece.java" />
-    <entry file="file://$PROJECT_DIR$/pieces/BP.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pieces/BP.gif" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Window.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -272,19 +237,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="39">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="476">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
