@@ -52,7 +52,7 @@ public class TilePanel extends JPanel {
         setVisible(true);
         validate();
     }
-    
+
     private void paintTile(int row, int tileId) {
         if (row % 2 != 0) {
             this.setBackground(tileId % 2 != 0 ? LIGHT_TILE_COLOR : DARK_TILE_COLOR);
