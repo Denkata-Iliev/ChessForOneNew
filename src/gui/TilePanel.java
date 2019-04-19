@@ -20,13 +20,13 @@ public class TilePanel extends JPanel {
     public TilePanel(int x, int y) {
         this.coordinateX = x;
         this.coordinateY = y;
-        assignPieceIcon(x ,y);
+        assignPieceIcon();
         paintTile(x, y);
         setPreferredSize(TILE_PANEL_DIMENSION);
         addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-
+                //TODO
             }
 
             @Override
@@ -61,55 +61,48 @@ public class TilePanel extends JPanel {
         }
     }
 
-    private void assignPieceIcon(int row, int tileId) {
-        String[][] nameMatrix = new String[8][8];
-        switch (nameMatrix[row][tileId]) {
-            case "White_Queen":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "Black_Rook":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "Black_Queen":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "Black_King":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "White_Bishop":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "White_Knight":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "White_Rook":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "White_Pawn":
-                putPieceIcon(nameMatrix[row][tileId]);
-            case "White_King":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "Black_Pawn":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "Black_Bishop":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            case "Black_Knight":
-                putPieceIcon(nameMatrix[row][tileId]);
-                break;
-            default:
-                System.out.println("Shouldn't come here!");
+    private void assignPieceIcon() {
+        assignWhitePiecesIcons(coordinateX, coordinateY);
+        assignBlackPiecesIcons(coordinateX, coordinateY);
+    }
+
+    private void assignBlackPiecesIcons(int row, int tileId) {
+        if (row == 1) {
+            try {
+                BufferedImage image = ImageIO.read(new File("pieces/R" + row + "T" + tileId + ".gif"));
+                add(new JLabel(new ImageIcon(image)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (row == 2) {
+            try {
+                BufferedImage image = ImageIO.read(new File("pieces/BP.gif"));
+                add(new JLabel(new ImageIcon(image)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    private void putPieceIcon(String nameOfPiece) {
-        try {
-            BufferedImage pieceIcon = ImageIO.read(new File("pieces/" + nameOfPiece + ".gif"));
-            add(new JLabel(new ImageIcon(pieceIcon)));
-        } catch (IOException e) {
-            e.printStackTrace();
+    private void assignWhitePiecesIcons(int row, int tileId) {
+        if (row == 7) {
+            try {
+                BufferedImage image = ImageIO.read(new File("pieces/WP.gif"));
+                add(new JLabel(new ImageIcon(image)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (row == 8) {
+            try {
+                BufferedImage image = ImageIO.read(new File("pieces/R" + row + "T" + tileId + ".gif"));
+                add(new JLabel(new ImageIcon(image)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

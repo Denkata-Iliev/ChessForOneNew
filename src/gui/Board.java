@@ -6,8 +6,8 @@ import java.awt.*;
 public class Board {
     private static final Dimension FRAME_DIMENSION = new Dimension(700, 700);
     private static final Dimension BOARD_PANEL_DIMENSION = new Dimension(500, 450);
-    static final int ROW_LENGTH = 8;
-    static final int ROWS_NUMBER = 8;
+    private static final int ROW_LENGTH = 8;
+    private static final int ROWS_NUMBER = 8;
 
     private JFrame gameFrame = new JFrame("Chess");
     private MenuBar menuBar = new MenuBar();
