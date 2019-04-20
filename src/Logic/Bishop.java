@@ -13,19 +13,12 @@ public final class Bishop extends Piece {
 
     private final static int[] CANDIDATE_MOVE_COORDINATES = {-9, -7, 7, 9};
 
-    public Bishop(final Alliance alliance,
-                  final int piecePosition) {
-         super(PieceType.BISHOP, alliance, piecePosition, true);
-    }
-
-    public Bishop(final Alliance alliance,
-                  final int piecePosition,
-                   final boolean isFirstMove) {
-        super(PieceType.BISHOP, alliance, piecePosition, isFirstMove);
+    public Bishop(boolean isWhite, final int piecePosition) {
+        super(isWhite, piecePosition);
     }
 
     @Override
-    public Collection<Move> calculateLegalMoves(final Board board) {
+    public List<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentCandidateOffset : CANDIDATE_MOVE_COORDINATES) {
             int candidateDestinationCoordinate = this.piecePosition;
@@ -54,31 +47,5 @@ public final class Bishop extends Piece {
         return legalMoves;
     }
 
-    @Override
-    public int locationBonus() {
-        return this.pieceAlliance.bishopBonus(this.piecePosition);
-    }
-
-    @Override
-    public Bishop movePiece(final Move move) {
-        return PieceUtils.INSTANCE.getMovedBishop(move.getMovedPiece().getPieceAllegiance(), move.getDestinationCoordinate());
-    }
-
-    @Override
-    public String toString() {
-        return this.pieceType.toString();
-    }
-
-    private static boolean isFirstColumnExclusion(final int currentCandidate,
-                                                  final int candidateDestinationCoordinate) {
-        return (BoardUtils.INSTANCE.FIRST_COLUMN.get(candidateDestinationCoordinate) &&
-                ((currentCandidate == -9) || (currentCandidate == 7)));
-    }
-
-    private static boolean isEighthColumnExclusion(final int currentCandidate,
-                                                   final int candidateDestinationCoordinate) {
-        return BoardUtils.INSTANCE.EIGHTH_COLUMN.get(candidateDestinationCoordinate) &&
-                        ((currentCandidate == -7) || (currentCandidate == 9));
-    }
 
 }

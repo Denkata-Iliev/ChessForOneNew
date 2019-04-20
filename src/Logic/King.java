@@ -1,47 +1,27 @@
-package com.chess.engine.classic.pieces;
+package Logic;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.BoardUtils;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.board.Move.MajorAttackMove;
-import com.chess.engine.classic.board.Move.MajorMove;
-import com.google.common.collect.ImmutableList;
+
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public final class King extends Piece {
 
     private final static int[] CANDIDATE_MOVE_COORDINATES = { -9, -8, -7, -1, 1, 7, 8, 9 };
     private final boolean isCastled;
-    private final boolean kingSideCastleCapable;
-    private final boolean queenSideCastleCapable;
+    //private final boolean kingSideCastleCapable;
+    //private final boolean queenSideCastleCapable;
 
-    public King(final Alliance alliance,
-                final int piecePosition,
-                final boolean kingSideCastleCapable,
-                final boolean queenSideCastleCapable) {
-        super(PieceType.KING, alliance, piecePosition, true);
+    public King(boolean isWhite, final int piecePosition) {
+        super(isWhite, piecePosition);
         this.isCastled = false;
-        this.kingSideCastleCapable = kingSideCastleCapable;
-        this.queenSideCastleCapable = queenSideCastleCapable;
+        //this.kingSideCastleCapable = kingSideCastleCapable;
+        //this.queenSideCastleCapable = queenSideCastleCapable;
     }
 
-    public King(final Alliance alliance,
-                final int piecePosition,
-                final boolean isFirstMove,
-                final boolean isCastled,
-                final boolean kingSideCastleCapable,
-                final boolean queenSideCastleCapable) {
-        super(PieceType.KING, alliance, piecePosition, isFirstMove);
-        this.isCastled = isCastled;
-        this.kingSideCastleCapable = kingSideCastleCapable;
-        this.queenSideCastleCapable = queenSideCastleCapable;
-    }
 
-    public boolean isCastled() {
+
+    /*public boolean isCastled() {
         return this.isCastled;
     }
 
@@ -52,9 +32,10 @@ public final class King extends Piece {
     public boolean isQueenSideCastleCapable() {
         return this.queenSideCastleCapable;
     }
+    */
 
     @Override
-    public Collection<Move> calculateLegalMoves(final Board board) {
+    public List<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentCandidateOffset : CANDIDATE_MOVE_COORDINATES) {
             if (isFirstColumnExclusion(this.piecePosition, currentCandidateOffset) ||
@@ -75,7 +56,7 @@ public final class King extends Piece {
                 }
             }
         }
-        return ImmutableList.copyOf(legalMoves);
+        return legalMoves;
     }
 
     @Override

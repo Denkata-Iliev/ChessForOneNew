@@ -1,11 +1,5 @@
-package com.chess.engine.classic.pieces;
+package Logic;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.BoardUtils;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.board.Move.*;
-import com.google.common.collect.ImmutableList;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,15 +10,8 @@ public final class Pawn
 
     private final static int[] CANDIDATE_MOVE_COORDINATES = {8, 16, 7, 9};
 
-    public Pawn(final Alliance allegiance,
-                final int piecePosition) {
-        super(PieceType.PAWN, allegiance, piecePosition, true);
-    }
-
-    public Pawn(final Alliance alliance,
-                final int piecePosition,
-                final boolean isFirstMove) {
-        super(PieceType.PAWN, alliance, piecePosition, isFirstMove);
+    public Pawn(boolean isWhite, final int piecePosition) {
+        super(isWhite, piecePosition);
     }
 
     @Override
@@ -33,7 +20,7 @@ public final class Pawn
     }
 
     @Override
-    public Collection<Move> calculateLegalMoves(final Board board) {
+    public List<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentCandidateOffset : CANDIDATE_MOVE_COORDINATES) {
             int candidateDestinationCoordinate =
@@ -134,7 +121,7 @@ public final class Pawn
                 }
             }
         }
-        return ImmutableList.copyOf(legalMoves);
+        return legalMoves;
     }
 
     @Override
