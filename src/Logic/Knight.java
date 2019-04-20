@@ -8,8 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Knight extends Piece {
-
-    private final int[] CANDIDATE_MOVE_COORDINATES = { -17, -15, -10, -6, 6, 10, 15, 17 };
+     int[] CANDIDATE_MOVE_COORDINATES = { -17, -15, -10, -6, 6, 10, 15, 17 };
 
     public Knight(boolean isWhite, final int piecePosition) {
         super(isWhite, piecePosition);

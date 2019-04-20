@@ -10,7 +10,7 @@ public abstract class Piece {
 
     Piece(boolean isWhite,
           int piecePosition) {
-        this.piecePosition = piecePosition
+        this.piecePosition = piecePosition;
         this.isWhite = isWhite;
     }
 

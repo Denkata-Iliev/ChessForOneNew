@@ -6,8 +6,7 @@ import java.util.Collection;
 import java.util.List;
 
 public final class Queen extends Piece {
-
-    private final static int[] CANDIDATE_MOVE_COORDINATES = { -9, -8, -7, -1, 1,
+    int[] CANDIDATE_MOVE_COORDINATES = { -9, -8, -7, -1, 1,
         7, 8, 9 };
 
     public Queen(boolean isWhite, final int piecePosition) {

@@ -11,7 +11,7 @@ import java.util.List;
 
 public final class Bishop extends Piece {
 
-    private final static int[] CANDIDATE_MOVE_COORDINATES = {-9, -7, 7, 9};
+    int[] CANDIDATE_MOVE_COORDINATES = {-9, -7, 7, 9};
 
     public Bishop(boolean isWhite, final int piecePosition) {
         super(isWhite, piecePosition);

@@ -1,5 +1,7 @@
 package Logic;
 
+import java.util.List;
+
 public class Board {
 
     // matricata
@@ -7,6 +9,7 @@ public class Board {
     //pieceType string
     public Tile boardMatrix[][] = new Tile[8][8];
     String stringmatrix[][] = new String[8][8];
+    public Piece[] deadPieces = new Piece[32];
 
     public Board() {
         for (int i = 0; i < 8; i++) {

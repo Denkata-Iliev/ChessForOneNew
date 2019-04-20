@@ -13,7 +13,7 @@ import java.util.List;
 
 public final class Rook extends Piece {
 
-    private final static int[] CANDIDATE_MOVE_COORDINATES = { -8, -1, 1, 8 };
+    int[] CANDIDATE_MOVE_COORDINATES = { -8, -1, 1, 8 };
 
     public Rook(boolean isWhite, final int piecePosition) {
         super(isWhite, piecePosition);
