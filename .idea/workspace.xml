@@ -3,29 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/Black_Bishop.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/Black_King.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/Black_Knight.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/Black_Pawn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/Black_Queen.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/Black_Rook.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/White_Bishop.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/White_King.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/White_Knight.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/White_Pawn.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/White_Queen.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/White_Rook.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Alliance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Alliance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Piece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Tile$EmptyTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Tile$occupiedTile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Tile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/Board$BoardPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/MenuBar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/TilePanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/TilePanel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Logic/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TilePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TilePanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,6 +31,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logic/Piece.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="964">
@@ -111,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logic/Knight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="34" column="50" lean-forward="true" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+            <state relative-caret-position="538">
+              <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -280,7 +281,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.155527" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.155527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -289,7 +290,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3270525" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -297,7 +298,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.3290461" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.32839838" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -368,16 +369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logic/Knight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="50" lean-forward="true" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -466,24 +457,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-          <folding>
-            <element signature="e#1804#1805#0" expanded="true" />
-            <element signature="e#1845#1846#0" expanded="true" />
-            <element signature="e#1890#1891#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-            <element signature="e#2004#2005#0" expanded="true" />
-            <element signature="e#2061#2062#0" expanded="true" />
-            <element signature="e#2101#2102#0" expanded="true" />
-            <element signature="e#2147#2148#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
-            <element signature="e#2377#2378#0" expanded="true" />
-            <element signature="e#6900#6901#0" expanded="true" />
-            <element signature="e#6949#6950#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-55">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
         </state>
       </provider>
     </entry>

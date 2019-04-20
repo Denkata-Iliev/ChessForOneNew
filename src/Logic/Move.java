@@ -45,7 +45,28 @@ public class Move {
                          final int destinationCoordinate) {
             super(board, pieceMoved, destinationCoordinate);
         }
-        
+
+    }
+    abstract static class AttackMove
+            extends Move {
+
+        private final Piece attackedPiece;
+
+        AttackMove(final Board board,
+                   final Piece pieceMoved,
+                   final int destinationCoordinate,
+                   final Piece pieceAttacked) {
+            super(board, pieceMoved, destinationCoordinate);
+            this.attackedPiece = pieceAttacked;
+        }
+
+
+        @Override
+        public Piece getAttackedPiece() {
+            return this.attackedPiece;
+        }
+
+
     }
 
     public static class MajorAttackMove
@@ -73,6 +94,7 @@ public class Move {
 
     }
 
+
     public class PawnAttackMove
             extends AttackMove {
 
@@ -87,26 +109,6 @@ public class Move {
     }
 
 
-    abstract class AttackMove
-            extends Move {
 
-        private final Piece attackedPiece;
-
-        AttackMove(final Board board,
-                   final Piece pieceMoved,
-                   final int destinationCoordinate,
-                   final Piece pieceAttacked) {
-            super(board, pieceMoved, destinationCoordinate);
-            this.attackedPiece = pieceAttacked;
-        }
-
-
-        @Override
-        public Piece getAttackedPiece() {
-            return this.attackedPiece;
-        }
-
-
-    }
 }
 
