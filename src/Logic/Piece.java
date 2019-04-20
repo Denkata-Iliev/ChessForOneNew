@@ -7,9 +7,10 @@ public abstract class Piece {
     boolean isWhite;
     final int piecePosition;
 
+
     Piece(boolean isWhite,
-          final int piecePosition) {
-        this.piecePosition = piecePosition;
+          int piecePositionX, int piecePositionY) {
+        this.piecePosition = piecePositionY * 8 + piecePositionX;
         this.isWhite = isWhite;
     }
 

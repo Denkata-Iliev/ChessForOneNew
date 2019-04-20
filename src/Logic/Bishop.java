@@ -1,12 +1,9 @@
-package com.chess.engine.classic.pieces;
+package Logic;
 
-import com.chess.engine.classic.Alliance;
-import com.chess.engine.classic.board.Board;
-import com.chess.engine.classic.board.BoardUtils;
-import com.chess.engine.classic.board.Move;
-import com.chess.engine.classic.board.Move.MajorAttackMove;
-import com.chess.engine.classic.board.Move.MajorMove;
-import com.google.common.collect.ImmutableList;
+
+
+import Logic.Move;
+import Logic.Piece;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -54,7 +51,7 @@ public final class Bishop extends Piece {
                 }
             }
         }
-        return ImmutableList.copyOf(legalMoves);
+        return legalMoves;
     }
 
     @Override

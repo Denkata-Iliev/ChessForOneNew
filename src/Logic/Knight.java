@@ -1,4 +1,4 @@
-package com.chess.engine.classic.pieces;
+package Logic;
 
 import Logic.Board;
 import Logic.Move;
@@ -12,15 +12,8 @@ public final class Knight extends Piece {
 
     private final static int[] CANDIDATE_MOVE_COORDINATES = { -17, -15, -10, -6, 6, 10, 15, 17 };
 
-    public Knight(final Alliance alliance,
-                  final int piecePosition) {
-        super(PieceType.KNIGHT, alliance, piecePosition, true);
-    }
-
-    public Knight(final Alliance alliance,
-                  final int piecePosition,
-                  final boolean isFirstMove) {
-        super(PieceType.KNIGHT, alliance, piecePosition, isFirstMove);
+    public Knight(boolean isWhite, final int piecePosition) {
+        super(isWhite, piecePosition);
     }
 
     @Override

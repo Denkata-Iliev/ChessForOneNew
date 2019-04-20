@@ -1,5 +1,7 @@
 package Logic;
 
+import com.chess.engine.classic.pieces.Knight;
+
 public class Board {
 
     // matricata
@@ -11,7 +13,14 @@ public class Board {
     public Board() {
         for (int i = 0; i < 8; i++) {
             if(i == 0 || i == 7){
-                this.boardMatrix[i][0] == new Tile.occupiedTile(i, 0, new Rook();
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 0));
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 7));
+                new Tile.occupiedTile(i, 0, new Knight(true, 8 * i + 7));
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 7));
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 7));
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 7));
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 7));
+                new Tile.occupiedTile(i, 0, new Rook(true, 8 * i + 7));
             }
         }
     }
