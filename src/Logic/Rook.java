@@ -24,49 +24,24 @@ public final class Rook extends Piece {
     public List<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentCandidateOffset : CANDIDATE_MOVE_COORDINATES) {
-            int candidateDestinationCoordinate = this.piecePosition;
-            while (Board.isValidTileCoordinate(candidateDestinationCoordinate)) {
-                if (isColumnExclusion(currentCandidateOffset, candidateDestinationCoordinate)) {
-                    break;
-                }
-                candidateDestinationCoordinate += currentCandidateOffset;
-                if (BoardUtils.isValidTileCoordinate(candidateDestinationCoordinate)) {
-                    final Piece pieceAtDestination = board.getPiece(candidateDestinationCoordinate);
-                    if (pieceAtDestination == null) {
-                        legalMoves.add(new MajorMove(board, this, candidateDestinationCoordinate));
-                    } else {
-                        final Alliance pieceAtDestinationAllegiance = pieceAtDestination.getPieceAllegiance();
-                        if (this.pieceAlliance != pieceAtDestinationAllegiance) {
-                            legalMoves.add(new MajorAttackMove(board, this, candidateDestinationCoordinate,
-                                    pieceAtDestination));
-                        }
-                        break;
+
+            final int candidateDestinationCoordinate = this.piecePosition + currentCandidateOffset;
+
+            if (Board.isValidTileCoordinate(candidateDestinationCoordinate)) {
+
+                final Piece pieceAtDestination = board.getPiece(candidateDestinationCoordinate);
+
+                if (pieceAtDestination == null) {
+                    legalMoves.add(new Move.MajorMove(board, this, candidateDestinationCoordinate));
+                } else {
+                    final boolean pieceAtDestinationAllegiance = pieceAtDestination.getPieceAllegiance();
+                    if (this.isWhite != pieceAtDestinationAllegiance) {
+                        legalMoves.add(new Move.MajorAttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
                     }
                 }
             }
         }
         return legalMoves;
-    }
-
-    @Override
-    public int locationBonus() {
-        return this.pieceAlliance.rookBonus(this.piecePosition);
-    }
-
-    @Override
-    public Rook movePiece(final Move move) {
-        return PieceUtils.INSTANCE.getMovedRook(move.getMovedPiece().getPieceAllegiance(), move.getDestinationCoordinate());
-    }
-
-    @Override
-    public String toString() {
-        return this.pieceType.toString();
-    }
-
-    private static boolean isColumnExclusion(final int currentCandidate,
-                                             final int candidateDestinationCoordinate) {
-        return (BoardUtils.INSTANCE.FIRST_COLUMN.get(candidateDestinationCoordinate) && (currentCandidate == -1)) ||
-               (BoardUtils.INSTANCE.EIGHTH_COLUMN.get(candidateDestinationCoordinate) && (currentCandidate == 1));
     }
 
 }

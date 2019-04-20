@@ -79,7 +79,7 @@ public class Move {
 
 
 
-    public class MajorMove
+    public static class MajorMove
             extends Move {
 
         public MajorMove(final Board board,
@@ -96,7 +96,7 @@ public class Move {
 
     }
 
-    public class MajorAttackMove
+    public static class MajorAttackMove
             extends AttackMove {
 
         public MajorAttackMove(final Board board,

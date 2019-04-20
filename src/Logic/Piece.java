@@ -15,7 +15,7 @@ public abstract class Piece {
     }
 
     public boolean getPieceAllegiance(){
-
+        return this.isWhite;
     }
 
     public boolean isWhite() {

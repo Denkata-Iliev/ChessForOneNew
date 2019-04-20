@@ -50,7 +50,7 @@ public class Board {
         }
     }
 
-    public boolean isValidTileCoordinate(int coordinate) {
+    public static boolean isValidTileCoordinate(int coordinate) {
         if (coordinate >= 0 && coordinate < 64){
             return true;
         }else return false;
