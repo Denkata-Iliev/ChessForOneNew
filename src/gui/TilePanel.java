@@ -2,7 +2,6 @@ package gui;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -24,6 +23,32 @@ public class TilePanel extends JPanel {
         assignPieceIcon();
         paintTile(x, y);
         setPreferredSize(TILE_PANEL_DIMENSION);
+        addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                //TODO
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
         setVisible(true);
         validate();
     }
@@ -79,8 +104,5 @@ public class TilePanel extends JPanel {
                 e.printStackTrace();
             }
         }
-
-
-        //vhod 8x8 matrica null/ string
     }
 }
