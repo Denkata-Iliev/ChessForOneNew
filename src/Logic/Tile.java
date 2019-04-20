@@ -2,12 +2,17 @@ package Logic;
 
 public abstract class Tile {
 
-    int tileCoordinate;
+    int tileCoordinateX;
+    int tileCoordinateY;
 
 
-    public Tile(int tileCoordinate) {
-        this.tileCoordinate = tileCoordinate;
+    public Tile(int tileCoordinateX, int tileCoordinateY) {
+        this.tileCoordinateX = tileCoordinateX;
+        this.tileCoordinateY = tileCoordinateY;
     }
+
+
+
 
     public abstract boolean isItOccupied();
 
@@ -15,8 +20,8 @@ public abstract class Tile {
 
     public static final class EmptyTile extends Tile{
 
-        public EmptyTile(int tileCoordinate) {
-            super(tileCoordinate);
+        public EmptyTile(int tileCoordinateX, int tileCoordinateY) {
+            super(tileCoordinateX, tileCoordinateY);
         }
 
         @Override
@@ -34,8 +39,8 @@ public abstract class Tile {
 
         Piece pieceOnTile;
 
-        public occupiedTile(int tileCoordinate, Piece pieceOnTile) {
-            super(tileCoordinate);
+        public occupiedTile(int tileCoordinateX, int tileCoordinateY, Piece pieceOnTile) {
+            super(tileCoordinateX, tileCoordinateY);
             this.pieceOnTile = pieceOnTile;
         }
 
