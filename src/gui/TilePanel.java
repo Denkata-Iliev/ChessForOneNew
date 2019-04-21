@@ -46,7 +46,6 @@ public class TilePanel extends JPanel {
 
             @Override
             public void mouseExited(MouseEvent e) {
-
             }
         });
         setVisible(true);
