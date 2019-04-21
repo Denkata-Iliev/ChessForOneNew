@@ -4,13 +4,26 @@ import java.util.List;
 
 public abstract class Piece {
 
-    final Alliance pieceAlliance;
+    boolean isWhite;
     final int piecePosition;
 
-    Piece(final Alliance alliance,
-          final int piecePosition) {
+
+    Piece(boolean isWhite,
+          int piecePosition) {
         this.piecePosition = piecePosition;
-        this.pieceAlliance = alliance;
+        this.isWhite = isWhite;
+    }
+
+    public boolean getPieceAllegiance(){
+        return this.isWhite;
+    }
+
+    public boolean isWhite() {
+        return isWhite;
+    }
+
+    public int getPiecePosition() {
+        return piecePosition;
     }
 
     public abstract List<Move> calculateLegalMoves(final Board board);
