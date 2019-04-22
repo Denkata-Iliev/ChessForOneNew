@@ -9,10 +9,14 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+import static javax.swing.SwingUtilities.isLeftMouseButton;
+import static javax.swing.SwingUtilities.isRightMouseButton;
+
 public class TilePanel extends JPanel {
     private static final Dimension TILE_PANEL_DIMENSION = new Dimension(10, 50);
     private static final Color LIGHT_TILE_COLOR = Color.decode("#FFFACD");
     private static final Color DARK_TILE_COLOR = Color.decode("#593E1A");
+    public static final Color HIGHLIGHTED_TILE = Color.decode("#0000FF");
 
     private int coordinateX;
     private int coordinateY;
@@ -26,7 +30,13 @@ public class TilePanel extends JPanel {
         addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                //TODO
+                if (isRightMouseButton(e)) {
+                    unSelectTile();
+                }
+                if (isLeftMouseButton(e)) {
+                    highlightSelectedTile();
+
+                }
             }
 
             @Override
@@ -50,6 +60,14 @@ public class TilePanel extends JPanel {
         });
         setVisible(true);
         validate();
+    }
+
+    private void highlightSelectedTile() {
+        this.setBorder(BorderFactory.createLineBorder(HIGHLIGHTED_TILE, 4));
+    }
+
+    private void unSelectTile() {
+        this.setBorder(null);
     }
 
     private void paintTile(int row, int tileId) {
