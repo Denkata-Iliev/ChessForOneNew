@@ -45,7 +45,7 @@ public class Move {
                          final int destinationCoordinate) {
             super(board, pieceMoved, destinationCoordinate);
         }
-        
+
     }
 
     public class MajorAttackMove
