@@ -2,32 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$AttackMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$AttackMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$MajorAttackMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$MajorAttackMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$MajorMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$MajorMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$PawnAttackMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$PawnAttackMove.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move$PawnMove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Pawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/BoardPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/TilePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/TilePanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/TilePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/gui/TilePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/BP.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/Black_Pawn.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/Black_Rook.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/Black_Knight.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/Black_Bishop.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/Black_Queen.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R1T5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/Black_King.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/White_Rook.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/White_Knight.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/White_Bishop.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/White_Queen.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/R8T5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/White_King.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pieces/WP.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pieces/White_Pawn.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/BoardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BoardPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/TilePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TilePanel.java" afterDir="false" />
     </list>
@@ -52,15 +26,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="-777">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding>
-                <element signature="e#2118#2119#0" expanded="true" />
-                <element signature="e#2245#2246#0" expanded="true" />
-                <element signature="e#2316#2317#0" expanded="true" />
+                <element signature="e#2081#2082#0" expanded="true" />
+                <element signature="e#2208#2209#0" expanded="true" />
+                <element signature="e#2279#2280#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/BoardPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logic/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="1263">
               <caret line="144" column="44" selection-start-line="144" selection-start-column="44" selection-end-line="144" selection-end-column="44" />
               <folding>
                 <element signature="e#6481#6482#0" expanded="true" />
@@ -161,12 +135,12 @@
         <option value="$PROJECT_DIR$/src/gui/Board.java" />
         <option value="$PROJECT_DIR$/src/gui/Board.java" />
         <option value="$PROJECT_DIR$/src/gui/Board.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Board.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Board.java" />
+        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
+        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
+        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
         <option value="$PROJECT_DIR$/src/gui/BoardPanel.java" />
-        <option value="$PROJECT_DIR$/src/Logic/Board.java" />
-        <option value="$PROJECT_DIR$/src/Logic/Board.java" />
-        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
-        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
-        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
         <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
       </list>
     </option>
@@ -264,7 +238,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -482,10 +456,14 @@
     <entry file="file://$PROJECT_DIR$/pieces/R8T8.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java">
+    <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -493,16 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/BoardPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -516,35 +484,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#2118#2119#0" expanded="true" />
-            <element signature="e#2245#2246#0" expanded="true" />
-            <element signature="e#2316#2317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Logic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="1263">
           <caret line="144" column="44" selection-start-line="144" selection-start-column="44" selection-end-line="144" selection-end-column="44" />
           <folding>
             <element signature="e#6481#6482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/BoardPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#2081#2082#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
           </folding>
         </state>
       </provider>
