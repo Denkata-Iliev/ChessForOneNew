@@ -18,6 +18,7 @@ public final class Bishop extends Piece {
     }
 
     @Override
+    // dobavi dulgite dvizheniq na vsi4ki figuri
     public List<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentCandidateOffset : CANDIDATE_MOVE_COORDINATES) {
