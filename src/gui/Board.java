@@ -15,6 +15,7 @@ public class Board extends JFrame{
     }
 
     public void drawBoard() {
+        this.setResizable(false);
         this.setSize(FRAME_DIMENSION);
         this.setJMenuBar(menuBar);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -1,5 +1,8 @@
 package gui;
 
+import Logic.Board;
+import Logic.Piece;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -20,11 +23,13 @@ public class TilePanel extends JPanel {
 
     private int coordinateX;
     private int coordinateY;
+    private Board chessBoard;
 
     public TilePanel(int x, int y) {
         this.coordinateX = x;
         this.coordinateY = y;
-        assignPieceIcon();
+        chessBoard = new Board();
+        assignPieceIcon(x, y, chessBoard);
         paintTile(x, y);
         setPreferredSize(TILE_PANEL_DIMENSION);
         addMouseListener(new MouseListener() {
@@ -34,8 +39,11 @@ public class TilePanel extends JPanel {
                     unSelectTile();
                 }
                 if (isLeftMouseButton(e)) {
-                    highlightSelectedTile();
-
+                    Piece[][] piecesMatrix = chessBoard.getBoardPieceMatrix();
+                    if (piecesMatrix[x][y] != null) {
+                        highlightSelectedTile();
+                        validate();
+                    }
                 }
             }
 
@@ -62,6 +70,10 @@ public class TilePanel extends JPanel {
         validate();
     }
 
+    public Board getChessBoard() {
+        return chessBoard;
+    }
+
     private void highlightSelectedTile() {
         this.setBorder(BorderFactory.createLineBorder(HIGHLIGHTED_TILE, 4));
     }
@@ -78,48 +90,18 @@ public class TilePanel extends JPanel {
         }
     }
 
-    private void assignPieceIcon() {
-        assignWhitePiecesIcons(coordinateX, coordinateY);
-        assignBlackPiecesIcons(coordinateX, coordinateY);
-    }
-
-    private void assignBlackPiecesIcons(int row, int tileId) {
-        if (row == 1) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/R" + row + "T" + tileId + ".gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (row == 2) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/BP.gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    private void assignPieceIcon(int row, int tileId, Board chessBoard) {
+        String[][] nameMatrix = chessBoard.getBoardStringMatrix();
+        if (nameMatrix[row][tileId] != null) {
+            putPieceIcon(nameMatrix[row][tileId]);
         }
     }
 
-    private void assignWhitePiecesIcons(int row, int tileId) {
-        if (row == 7) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/WP.gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        if (row == 8) {
-            try {
-                BufferedImage image = ImageIO.read(new File("pieces/R" + row + "T" + tileId + ".gif"));
-                add(new JLabel(new ImageIcon(image)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    private void putPieceIcon(String nameOfPiece) {
+        try {
+            add(new JLabel(new ImageIcon(ImageIO.read(new File("pieces/" + nameOfPiece + ".gif")))));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
