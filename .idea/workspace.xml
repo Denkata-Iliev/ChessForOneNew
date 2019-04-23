@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+ HEAD
     <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="" />
+
+    <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Logic/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessForOneNew/Logic/Bishop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logic/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Pawn.java" afterDir="false" />
+    </list>
+ 85c41058888ee24737727532f8e19a3f85930012
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +26,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+ HEAD
+        <file pinned="false" current-in-tab="false"> </file>
+        <entry file="file://$PROJECT_DIR$/src/Application.java"> </entry>
+        <provider selected="true" editor-type-id="text-editor"> </provider>
+        <state relative-caret-position="85"> </state>
               <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#1531#1532#0" expanded="true" />
+                <element signature="e#1580#1581#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Piece.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Pawn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="39">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/King.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Bishop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+ 85c41058888ee24737727532f8e19a3f85930012
             </state>
           </provider>
         </entry>
@@ -26,8 +97,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
+ HEAD
+              <state relative-caret-position="935"> </state>
               <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+ 85c41058888ee24737727532f8e19a3f85930012
               <folding>
                 <element signature="e#1861#1862#0" expanded="true" />
                 <element signature="e#1932#1933#0" expanded="true" />
@@ -37,12 +113,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/BoardPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+ HEAD
+          <entry file="file://$PROJECT_DIR$/src/gui/BoardPanel.java"> </entry>
+          <provider selected="true" editor-type-id="text-editor"> </provider>
+          <state relative-caret-position="119"> </state>
               <caret line="7" column="83" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+
+        <entry file="file://$PROJECT_DIR$/src/Logic/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+ 85c41058888ee24737727532f8e19a3f85930012
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,22 +135,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+ HEAD
+              <state relative-caret-position="272"> </state>
               <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding>
+              <folding> </folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#364#365#0" expanded="true" />
                 <element signature="e#394#395#0" expanded="true" />
+
+            <state relative-caret-position="312">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#351#352#0" expanded="true" />
+ 85c41058888ee24737727532f8e19a3f85930012
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+ HEAD
+          <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java"> </entry>
+          <provider selected="true" editor-type-id="text-editor"> </provider>
+          <state relative-caret-position="578"> </state>
               <caret line="34" selection-start-line="34" selection-end-line="34" />
+
+        <entry file="file://$PROJECT_DIR$/src/Logic/Tile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Logic/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+              <folding>
+                <element signature="e#6648#6649#0" expanded="true" />
+              </folding>
+ 85c41058888ee24737727532f8e19a3f85930012
             </state>
           </provider>
         </entry>
@@ -92,18 +204,38 @@
         <option value="$PROJECT_DIR$/src/gui/BlackBishop.java" />
         <option value="$PROJECT_DIR$/src/gui/BoardUtils.java" />
         <option value="$PROJECT_DIR$/src/gui/Game.java" />
+ HEAD
         <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
         <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
         <option value="$PROJECT_DIR$/src/Logic/Tile.java" />
         <option value="$PROJECT_DIR$/src/Logic/Bishop.java" />
+
+        <option value="$PROJECT_DIR$/src/Application.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
+        <option value="$PROJECT_DIR$/src/gui/Board.java" />
+        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
+        <option value="$PROJECT_DIR$/src/Application.java" />
+        <option value="$PROJECT_DIR$/src/Logic/King.java" />
+ 85c41058888ee24737727532f8e19a3f85930012
         <option value="$PROJECT_DIR$/src/Logic/Knight.java" />
-        <option value="$PROJECT_DIR$/src/Logic/Pawn.java" />
         <option value="$PROJECT_DIR$/src/Logic/Queen.java" />
         <option value="$PROJECT_DIR$/src/Logic/Rook.java" />
+ HEAD
         <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
         <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
+
+        <option value="$PROJECT_DIR$/src/gui/Board.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
+        <option value="$PROJECT_DIR$/src/gui/MenuBar.java" />
+        <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Bishop.java" />
+ 85c41058888ee24737727532f8e19a3f85930012
         <option value="$PROJECT_DIR$/src/Logic/Piece.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Player.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Pawn.java" />
         <option value="$PROJECT_DIR$/src/Logic/Move.java" />
+ HEAD
         <option value="$PROJECT_DIR$/src/Logic/Board.java" />
         <option value="$PROJECT_DIR$/src/Logic/King.java" />
         <option value="$PROJECT_DIR$/src/gui/BoardPanel.java" />
@@ -113,14 +245,18 @@
         <option value="$PROJECT_DIR$/src/Application.java" />
         <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
         <option value="$PROJECT_DIR$/src/gui/TilePanel.java" />
+
+        <option value="$PROJECT_DIR$/src/Logic/Tile.java" />
+        <option value="$PROJECT_DIR$/src/Logic/Board.java" />
+ 85c41058888ee24737727532f8e19a3f85930012
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="970" />
+    <option name="x" value="182" />
+    <option name="y" value="-20" />
+    <option name="width" value="897" />
+    <option name="height" value="651" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -128,8 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,6 +276,19 @@
             <path>
               <item name="ChessForOneNew" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChessForOneNew" type="462c0819:PsiDirectoryNode" />
+ HEAD
+
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessForOneNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChessForOneNew" type="462c0819:PsiDirectoryNode" />
+              <item name="pieces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChessForOneNew" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ChessForOneNew" type="462c0819:PsiDirectoryNode" />
+ 85c41058888ee24737727532f8e19a3f85930012
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -162,8 +311,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+ HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555741678415" />
     <property name="extract.method.default.visibility" value="private" />
+
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556040959461" />
+ 85c41058888ee24737727532f8e19a3f85930012
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -206,9 +359,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+ HEAD
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
+      <layout> </layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
+
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.155527" />
+ 85c41058888ee24737727532f8e19a3f85930012
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -248,18 +408,32 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/gui/WhitePiece.java" />
-    <entry file="file://$PROJECT_DIR$/../BlackWidow-Chess-master/src/com/chess/engine/classic/Alliance.java" />
     <entry file="file://$PROJECT_DIR$/pieces/BP.gif" />
+ HEAD
     <entry file="file://$PROJECT_DIR$/../BlackWidow-Chess-master/src/com/chess/BlackWidow.java" />
     <entry file="file://$PROJECT_DIR$/../BlackWidow-Chess-master/src/com/chess/engine/classic/pieces/Piece.java" />
+
+ 85c41058888ee24737727532f8e19a3f85930012
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/awt/Window.java" />
-    <entry file="file://D:/Chess for one/BlackWidow-Chess-master/src/com/chess/engine/classic/Alliance.java" />
     <entry file="file://$PROJECT_DIR$/src/gui/BlackBishop.java" />
     <entry file="file://$PROJECT_DIR$/pieces/3.gif" />
     <entry file="file://$PROJECT_DIR$/pieces/4.gif" />
     <entry file="file://$PROJECT_DIR$/src/gui/BoardUtils.java" />
+    <entry file="file://$PROJECT_DIR$/../BlackWidow-Chess-master/src/com/chess/engine/classic/Alliance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BlackWidow-Chess-master/src/com/chess/engine/classic/pieces/Piece.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Game.java" />
-    <entry file="file://D:/Chess for one/BlackWidow-Chess-master/src/com/chess/BlackWidow.java" />
+    <entry file="file://$PROJECT_DIR$/../BlackWidow-Chess-master/src/com/chess/BlackWidow.java" />
     <entry file="file://$PROJECT_DIR$/src/Logic/Alliance.java" />
     <entry file="file://$PROJECT_DIR$/pieces/R1T1.gif">
       <provider selected="true" editor-type-id="images" />
@@ -282,6 +456,7 @@
     <entry file="file://$PROJECT_DIR$/pieces/WP.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
+ HEAD
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/SwingUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14347" />
@@ -297,26 +472,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logic/Queen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+      <entry file="file://$PROJECT_DIR$/src/Logic/Queen.java"> </entry>
+      <provider selected="true" editor-type-id="text-editor"> </provider>
+      <state relative-caret-position="136"> </state>
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logic/Rook.java">
+
+    <entry file="file://$PROJECT_DIR$/src/Logic/Rook.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/MenuBar.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="476">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+ 85c41058888ee24737727532f8e19a3f85930012
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+ HEAD
+      <entry file="file://$PROJECT_DIR$/src/Logic/Rook.java"> </entry>
+      <provider selected="true" editor-type-id="text-editor"> </provider>
+      <state relative-caret-position="115"> </state>
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/SwingUtilities.java" />
+    <entry file="file://$PROJECT_DIR$/src/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+ 85c41058888ee24737727532f8e19a3f85930012
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+ HEAD
     <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-55">
@@ -324,16 +516,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logic/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+      <entry file="file://$PROJECT_DIR$/src/Logic/Bishop.java"> </entry>
+      <provider selected="true" editor-type-id="text-editor"> </provider>
+      <state relative-caret-position="221"> </state>
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+
+    <entry file="file://$PROJECT_DIR$/src/Logic/Queen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+ 85c41058888ee24737727532f8e19a3f85930012
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+ HEAD
     <entry file="file://$PROJECT_DIR$/src/Logic/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -355,10 +554,46 @@
         </state>
       </provider>
     </entry>
+      <entry file="file://$PROJECT_DIR$/src/Logic/Knight.java"> </entry>
+      <provider selected="true" editor-type-id="text-editor"> </provider>
+      <state relative-caret-position="255"> </state>
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8007">
+          <caret line="471" column="10" selection-start-line="471" selection-start-column="10" selection-end-line="471" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Logic/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        <state relative-caret-position="312">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+ 85c41058888ee24737727532f8e19a3f85930012
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -367,6 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logic/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
+ HEAD
         <state relative-caret-position="561">
           <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
         </state>
@@ -398,8 +634,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+          <state relative-caret-position="272"> </state>
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#1531#1532#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Bishop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+ 85c41058888ee24737727532f8e19a3f85930012
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#364#365#0" expanded="true" />
@@ -410,11 +687,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/TilePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
+ HEAD
+          <state relative-caret-position="935"> </state>
           <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
-          <folding>
+          <folding> </folding>
             <element signature="e#1861#1862#0" expanded="true" />
             <element signature="e#1932#1933#0" expanded="true" />
+
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logic/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+          <folding>
+            <element signature="e#6648#6649#0" expanded="true" />
+ 85c41058888ee24737727532f8e19a3f85930012
           </folding>
         </state>
       </provider>

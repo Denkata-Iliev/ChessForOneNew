@@ -5,6 +5,9 @@ public class Move {
     Board board;
     int destinationCoordinate;
     Piece movedPiece;
+    public void execute(){
+        board.movePiece(movedPiece.getPiecePosition(), destinationCoordinate);
+    }
 
     public Move(Board board,
                 Piece pieceMoved,
@@ -12,6 +15,8 @@ public class Move {
         this.board = board;
         this.destinationCoordinate = destinationCoordinate;
         this.movedPiece = pieceMoved;
+
+
     }
 
 
@@ -82,7 +87,7 @@ public class Move {
 
     }
 
-    public class PawnMove
+    /*public class PawnMove
             extends Move {
 
         public PawnMove(final Board board,
@@ -93,7 +98,7 @@ public class Move {
 
 
     }
-
+*/
 
     public class PawnAttackMove
             extends AttackMove {
