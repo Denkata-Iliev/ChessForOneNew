@@ -18,7 +18,7 @@ public class TilePanel extends JPanel {
     private static final Dimension TILE_PANEL_DIMENSION = new Dimension(10, 50);
     private static final Color LIGHT_TILE_COLOR = Color.decode("#FFFACD");
     private static final Color DARK_TILE_COLOR = Color.decode("#593E1A");
-    public static final Color HIGHLIGHTED_TILE = Color.decode("#0000FF");
+    private static final Color HIGHLIGHTED_TILE_COLOR = Color.decode("#0000FF");
 
     private int coordinateX;
     private int coordinateY;
@@ -48,17 +48,14 @@ public class TilePanel extends JPanel {
 
             @Override
             public void mousePressed(MouseEvent e) {
-
             }
 
             @Override
             public void mouseReleased(MouseEvent e) {
-
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {
-
             }
 
             @Override
@@ -69,12 +66,8 @@ public class TilePanel extends JPanel {
         validate();
     }
 
-    public Board getChessBoard() {
-        return chessBoard;
-    }
-
     private void highlightSelectedTile() {
-        this.setBorder(BorderFactory.createLineBorder(HIGHLIGHTED_TILE, 4));
+        this.setBorder(BorderFactory.createLineBorder(HIGHLIGHTED_TILE_COLOR, 4));
     }
 
     private void unSelectTile() {

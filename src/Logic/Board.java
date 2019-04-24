@@ -11,8 +11,8 @@ public class Board {
     String stringmatrix[][] = new String[8][8];
     public Piece[] deadPieces = new Piece[32];
 
-    private Piece[][] boardPieceMatrix = new Piece[8][8];
-    private String[][] boardStringMatrix = new String[8][8];
+    public Piece[][] boardPieceMatrix = new Piece[8][8];
+    public String[][] boardStringMatrix = new String[8][8];
 
     /*public Board() {
         for (int i = 0; i < 8; i++) {
@@ -59,20 +59,50 @@ public class Board {
     public Board() {
         for (int i = 0; i < 8; i++) {
             if (i == 0) {
-                initBlacks(i);
+                boardPieceMatrix[i][0] = new Rook(false, 8 * i + 0);
+                boardStringMatrix[i][0] = "Black_Rook";
+                boardPieceMatrix[i][1] = new Knight(false, 8 * i + 1);
+                boardStringMatrix[i][1] = "Black_Knight";
+                boardPieceMatrix[i][2] = new Bishop(false, 8 * i + 2);
+                boardStringMatrix[i][2] = "Black_Bishop";
+                boardPieceMatrix[i][3] = new Queen(false, 8 * i + 3);
+                boardStringMatrix[i][3] = "Black_Queen";
+                boardPieceMatrix[i][4] = new King(false, 8 * i + 4);
+                boardStringMatrix[i][4] = "Black_King";
+                boardPieceMatrix[i][5] = new Bishop(false, 8 * i + 5);
+                boardStringMatrix[i][5] = "Black_Bishop";
+                boardPieceMatrix[i][6] = new Knight(false, 8 * i + 6);
+                boardStringMatrix[i][6] = "Black_Knight";
+                boardPieceMatrix[i][7] = new Rook(false, 8 * i + 7);
+                boardStringMatrix[i][7] = "Black_Rook";
             } else {
                 if (i == 7) {
-                    initWhites(i);
+                    boardPieceMatrix[i][0] = new Rook(true, 8 * i + 0);
+                    boardStringMatrix[i][0] = "White_Rook";
+                    boardPieceMatrix[i][1] = new Knight(true, 8 * i + 1);
+                    boardStringMatrix[i][1] = "White_Knight";
+                    boardPieceMatrix[i][2] = new Bishop(true, 8 * i + 2);
+                    boardStringMatrix[i][2] = "White_Bishop";
+                    boardPieceMatrix[i][3] = new Queen(true, 8 * i + 3);
+                    boardStringMatrix[i][3] = "White_Queen";
+                    boardPieceMatrix[i][4] = new King(true, 8 * i + 4);
+                    boardStringMatrix[i][4] = "White_King";
+                    boardPieceMatrix[i][5] = new Bishop(true, 8 * i + 5);
+                    boardStringMatrix[i][5] = "White_Bishop";
+                    boardPieceMatrix[i][6] = new Knight(true, 8 * i + 6);
+                    boardStringMatrix[i][6] = "White_Knight";
+                    boardPieceMatrix[i][7] = new Rook(true, 8 * i + 7);
+                    boardStringMatrix[i][7] = "White_Rook";
                 } else {
                     if (i == 1) {
                         for (int j = 0; j < 8; j++) {
-                            boardPieceMatrix[i][j] = new Pawn(false, 8 * i + j);
+                            boardPieceMatrix[i][j] = new Pawn(true, 8 * i + j);
                             boardStringMatrix[i][j] = "Black_Pawn";
                         }
                     } else {
                         if (i == 6) {
                             for (int j = 0; j < 8; j++) {
-                                boardPieceMatrix[i][j] = new Pawn(true, 8 * i + j);
+                                boardPieceMatrix[i][j] = new Pawn(false, 8 * i + j);
                                 boardStringMatrix[i][j] = "White_Pawn";
                             }
                         } else {
@@ -85,44 +115,6 @@ public class Board {
                 }
             }
         }
-    }
-
-    private void initWhites(int i) {
-        boardPieceMatrix[i][0] = new Rook(true, 8 * i + 0);
-        boardStringMatrix[i][0] = "White_Rook";
-        boardPieceMatrix[i][1] = new Knight(true, 8 * i + 1);
-        boardStringMatrix[i][1] = "White_Knight";
-        boardPieceMatrix[i][2] = new Bishop(true, 8 * i + 2);
-        boardStringMatrix[i][2] = "White_Bishop";
-        boardPieceMatrix[i][3] = new Queen(true, 8 * i + 3);
-        boardStringMatrix[i][3] = "White_Queen";
-        boardPieceMatrix[i][4] = new King(true, 8 * i + 4);
-        boardStringMatrix[i][4] = "White_King";
-        boardPieceMatrix[i][5] = new Bishop(true, 8 * i + 5);
-        boardStringMatrix[i][5] = "White_Bishop";
-        boardPieceMatrix[i][6] = new Knight(true, 8 * i + 6);
-        boardStringMatrix[i][6] = "White_Knight";
-        boardPieceMatrix[i][7] = new Rook(true, 8 * i + 7);
-        boardStringMatrix[i][7] = "White_Rook";
-    }
-
-    private void initBlacks(int i) {
-        boardPieceMatrix[i][0] = new Rook(false, 8 * i + 0);
-        boardStringMatrix[i][0] = "Black_Rook";
-        boardPieceMatrix[i][1] = new Knight(false, 8 * i + 1);
-        boardStringMatrix[i][1] = "Black_Knight";
-        boardPieceMatrix[i][2] = new Bishop(false, 8 * i + 2);
-        boardStringMatrix[i][2] = "Black_Bishop";
-        boardPieceMatrix[i][3] = new Queen(false, 8 * i + 3);
-        boardStringMatrix[i][3] = "Black_Queen";
-        boardPieceMatrix[i][4] = new King(false, 8 * i + 4);
-        boardStringMatrix[i][4] = "Black_King";
-        boardPieceMatrix[i][5] = new Bishop(false, 8 * i + 5);
-        boardStringMatrix[i][5] = "Black_Bishop";
-        boardPieceMatrix[i][6] = new Knight(false, 8 * i + 6);
-        boardStringMatrix[i][6] = "Black_Knight";
-        boardPieceMatrix[i][7] = new Rook(false, 8 * i + 7);
-        boardStringMatrix[i][7] = "Black_Rook";
     }
 
     public static boolean isValidTileCoordinate(int coordinate) {
@@ -149,7 +141,6 @@ public class Board {
     public String[][] getBoardStringMatrix() {
         return boardStringMatrix;
     }
-
 /*public String[][] reArangeStringMatrix(Tile[][] boardMatrix, String[][] stringMatrix) {
         for (int i = 0; i <; i++) {
             //White_Queen
