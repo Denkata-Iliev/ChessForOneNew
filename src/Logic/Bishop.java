@@ -17,24 +17,26 @@ public final class Bishop extends Piece {
         super(isWhite, piecePosition);
     }
 
-    @Override
-    // dobavi dulgite dvizheniq na vsi4ki figuri
     public List<Move> calculateLegalMoves(final Board board) {
         final List<Move> legalMoves = new ArrayList<>();
         for (final int currentCandidateOffset : CANDIDATE_MOVE_COORDINATES) {
+            int candidateDestinationCoordinate = this.piecePosition;
+            while (board.isValidTileCoordinate(candidateDestinationCoordinate)) {
+                candidateDestinationCoordinate += currentCandidateOffset;
+                if (board.isValidTileCoordinate(candidateDestinationCoordinate)) {
 
-            final int candidateDestinationCoordinate = this.piecePosition + currentCandidateOffset;
+                    final Piece pieceAtDestination = board.getPiece(candidateDestinationCoordinate);
 
-            if (Board.isValidTileCoordinate(candidateDestinationCoordinate)) {
-
-                final Piece pieceAtDestination = board.getPiece(candidateDestinationCoordinate);
-
-                if (pieceAtDestination == null) {
-                    legalMoves.add(new Move.MajorMove(board, this, candidateDestinationCoordinate));
-                } else {
-                    final boolean pieceAtDestinationAllegiance = pieceAtDestination.getPieceAllegiance();
-                    if (this.isWhite != pieceAtDestinationAllegiance) {
-                        legalMoves.add(new Move.MajorAttackMove(board, this, candidateDestinationCoordinate, pieceAtDestination));
+                    if (pieceAtDestination == null) {
+                        legalMoves.add(new Move.MajorMove(board, this, candidateDestinationCoordinate));
+                    }
+                    else {
+                        final boolean pieceAlliance = pieceAtDestination.getPieceAllegiance();
+                        if (this.isWhite != pieceAlliance) {
+                            legalMoves.add(new Move.MajorAttackMove(board, this, candidateDestinationCoordinate,
+                                    pieceAtDestination));
+                        }
+                        break;
                     }
                 }
             }

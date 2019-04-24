@@ -137,6 +137,8 @@ public class Board {
     public String[][] getBoardStringMatrix() {
         return boardStringMatrix;
     }
+
+
 /*public String[][] reArangeStringMatrix(Tile[][] boardMatrix, String[][] stringMatrix) {
         for (int i = 0; i <; i++) {
             //White_Queen
