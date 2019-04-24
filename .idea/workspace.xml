@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logic/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logic/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/BoardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BoardPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/TilePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/TilePanel.java" afterDir="false" />
-    </list>
+    <list default="true" id="5a3db8a5-17e7-4257-9a81-c235322826b9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
