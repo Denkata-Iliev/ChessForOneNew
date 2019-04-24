@@ -9,6 +9,7 @@ public final class Pawn
         extends Piece {
 
     int[] CANDIDATE_MOVE_COORDINATES = {8, 16, 7, 9};
+    public boolean isFitrstMove = true;
 
     public Pawn(boolean isWhite, final int piecePosition) {
         super(isWhite, piecePosition);

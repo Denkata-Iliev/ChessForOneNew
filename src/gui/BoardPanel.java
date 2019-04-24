@@ -9,17 +9,16 @@ public class BoardPanel extends JPanel {
 
     BoardPanel() {
         super(new GridLayout(8, 8));
-        addTileAndAssignTileColor();
+        addTileToBoard();
         setPreferredSize(BOARD_PANEL_DIMENSION);
         setVisible(true);
         validate();
     }
 
-    private void addTileAndAssignTileColor() {
-        TilePanel tilePanel;
-        for (int row = 1; row <= Board.ROWS_NUMBER; row++) {
-            for (int tileId = 1; tileId <= Board.ROW_LENGTH; tileId++) {
-                tilePanel = new TilePanel(row, tileId);
+    private void addTileToBoard() {
+        for (int row = 0; row < Board.ROWS_NUMBER; row++) {
+            for (int tileId = 0; tileId < Board.ROW_LENGTH; tileId++) {
+                TilePanel tilePanel = new TilePanel(row, tileId);
                 add(tilePanel);
             }
         }

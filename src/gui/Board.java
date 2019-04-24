@@ -3,29 +3,26 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 
-public class Board {
+public class Board extends JFrame {
+
     private static final Dimension FRAME_DIMENSION = new Dimension(700, 700);
     static final int ROW_LENGTH = 8;
     static final int ROWS_NUMBER = 8;
 
-    private JFrame gameFrame = new JFrame("Chess");
     private MenuBar menuBar = new MenuBar();
 
     public Board() {
-        showFrame();
+        super("Chess Without Castling");
     }
 
-    private void showFrame() {
-        gameFrame.setSize(FRAME_DIMENSION);
-        gameFrame.setJMenuBar(menuBar);
-        gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        gameFrame.setLocationRelativeTo(null);
-        drawBoard();
-        gameFrame.setVisible(true);
+    public void drawBoard() {
+        this.setResizable(false);
+        this.setSize(FRAME_DIMENSION);
+        this.setJMenuBar(menuBar);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLocationRelativeTo(null);
+        this.add(new BoardPanel());
+        this.setVisible(true);
     }
 
-    private void drawBoard() {
-        BoardPanel boardPanel = new BoardPanel();
-        gameFrame.add(boardPanel);
-    }
 }
