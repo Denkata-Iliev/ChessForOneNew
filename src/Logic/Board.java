@@ -10,6 +10,9 @@ public class Board {
     public Tile boardMatrix[][] = new Tile[8][8];
     String stringmatrix[][] = new String[8][8];
     public Piece[] deadPieces = new Piece[32];
+    public Player currentPlayer;
+    public Player whitePlayer = new Player(true);
+    public Player blackPlayer = new Player(false);
 
     public Piece[][] boardPieceMatrix = new Piece[8][8];
     public String[][] boardStringMatrix = new String[8][8];
@@ -55,6 +58,10 @@ public class Board {
             }
         }
     }*/
+
+    public Player currentPlayer() {
+        return this.currentPlayer;
+    }
 
     public Board() {
         for (int i = 0; i < 8; i++) {
