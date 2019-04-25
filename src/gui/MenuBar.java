@@ -11,13 +11,11 @@ public class MenuBar extends JMenuBar {
 
     private void populateMenuBar(JMenuBar menuBar) {
         menuBar.add(gameMenu());
-        menuBar.add(optionsMenu());
         menuBar.add(helpMenu());
     }
 
     private JMenu gameMenu() {
         JMenu gameMenu = new JMenu("Game");
-        gameMenu.add(startNewGame());
         gameMenu.add(exitGame());
         return gameMenu;
     }
@@ -26,21 +24,6 @@ public class MenuBar extends JMenuBar {
         JMenuItem exitGameItem = new JMenuItem("Exit");
         exitGameItem.addActionListener(e -> System.exit(0));
         return exitGameItem;
-    }
-
-    private JMenuItem startNewGame() {
-        JMenuItem startNewGame = new JMenuItem("Start New Game");
-        startNewGame.addActionListener(e -> {
-            //TODO
-        });
-        return startNewGame;
-    }
-
-    private JMenu optionsMenu() {
-        JMenu optionsMenu = new JMenu("Options");
-        optionsMenu.add(new JMenuItem("Select difficulty"));
-        return optionsMenu;
-        //TODO
     }
 
     private JMenu helpMenu() {
