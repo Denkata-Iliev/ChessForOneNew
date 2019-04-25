@@ -5,7 +5,8 @@ public class Move {
     Board board;
     int destinationCoordinate;
     Piece movedPiece;
-    public void execute(){
+
+    public void execute() {
         board.movePiece(movedPiece.getPiecePosition(), destinationCoordinate);
     }
 
@@ -52,6 +53,7 @@ public class Move {
         }
 
     }
+
     abstract static class AttackMove
             extends Move {
 
@@ -87,7 +89,7 @@ public class Move {
 
     }
 
-    /*public class PawnMove
+    public class PawnMove
             extends Move {
 
         public PawnMove(final Board board,
@@ -98,9 +100,9 @@ public class Move {
 
 
     }
-*/
 
-    public class PawnAttackMove
+
+    public static class PawnAttackMove
             extends AttackMove {
 
         public PawnAttackMove(final Board board,
@@ -113,7 +115,32 @@ public class Move {
 
     }
 
+    public class PawnPromotion
+            extends PawnMove {
 
+        final Move decoratedMove;
+        final Pawn promotedPawn;
+        final Piece promotionPiece;
 
+        public PawnPromotion(final Move decoratedMove,
+                             final Piece promotionPiece) {
+            super(decoratedMove.getBoard(), decoratedMove.getMovedPiece(), decoratedMove.getDestinationCoordinate());
+            this.decoratedMove = decoratedMove;
+            this.promotedPawn = (Pawn) decoratedMove.getMovedPiece();
+            this.promotionPiece = promotionPiece;
+        }
+
+    /*public Board execute() {
+        final Board.Builder builder = new Builder();
+        this.board.currentPlayer().getActivePieces().stream().filter(piece -> !this.movedPiece.equals(piece)).forEach(builder::setPiece);
+        this.board.currentPlayer().getOpponent().getActivePieces().forEach(builder::setPiece);
+        builder.setPiece(this.movedPiece.movePiece(this));
+        builder.setMoveMaker(this.board.currentPlayer().getOpponent().getAlliance());
+        builder.setMoveTransition(this);
+        return builder.build();
+    }
+    */
+
+    }
 }
 

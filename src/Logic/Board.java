@@ -103,13 +103,13 @@ public class Board {
                 } else {
                     if (i == 1) {
                         for (int j = 0; j < 8; j++) {
-                            boardPieceMatrix[i][j] = new Pawn(true, 8 * i + j);
+                            boardPieceMatrix[i][j] = new Pawn(false, 8 * i + j);
                             boardStringMatrix[i][j] = "Black_Pawn";
                         }
                     } else {
                         if (i == 6) {
                             for (int j = 0; j < 8; j++) {
-                                boardPieceMatrix[i][j] = new Pawn(false, 8 * i + j);
+                                boardPieceMatrix[i][j] = new Pawn(true, 8 * i + j);
                                 boardStringMatrix[i][j] = "White_Pawn";
                             }
                         } else {
@@ -131,7 +131,7 @@ public class Board {
     }
 
     public Piece getPiece(int coordinates) {
-        return boardMatrix[coordinates / 8 + 1][coordinates - (coordinates / 8 - 1)].getPiece();
+        return boardMatrix[coordinates / 8][coordinates - (coordinates / 8)].getPiece();
     }
 
     public void movePiece(int oldCoordinates, int newCCoordinates) {
@@ -148,6 +148,12 @@ public class Board {
     public String[][] getBoardStringMatrix() {
         return boardStringMatrix;
     }
+
+    public Piece getPieceAtCoordinates (int y, int x){
+        return boardPieceMatrix[y][x];
+    }
+
+
 
 
 /*public String[][] reArangeStringMatrix(Tile[][] boardMatrix, String[][] stringMatrix) {

@@ -1,6 +1,7 @@
 package gui;
 
 import Logic.Board;
+import Logic.Move;
 import Logic.Piece;
 
 import javax.imageio.ImageIO;
@@ -39,9 +40,18 @@ public class TilePanel extends JPanel {
                 }
                 if (isLeftMouseButton(e)) {
                     Piece[][] piecesMatrix = chessBoard.getBoardPieceMatrix();
-                    if (piecesMatrix[x][y] != null) {
+                    if (piecesMatrix[x][y] != null && piecesMatrix[x][y].getPieceAllegiance() == true) {
+                        for (Move currentmove: piecesMatrix[x][y].calculateLegalMoves(chessBoard)
+                             ) {
+
+                        }
+
+
                         highlightSelectedTile();
                         validate();
+
+
+
                     }
                 }
             }
@@ -65,6 +75,9 @@ public class TilePanel extends JPanel {
         setVisible(true);
         validate();
     }
+
+
+
 
     private void highlightSelectedTile() {
         this.setBorder(BorderFactory.createLineBorder(HIGHLIGHTED_TILE_COLOR, 4));
